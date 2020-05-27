@@ -1,0 +1,983 @@
+IQ-TREE multicore version 2.0.3 for Linux 64-bit built Apr 26 2020
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    dahzbog (AVX2, FMA3, 15 GB RAM)
+Command: iqtree -m LG+G -s mcr.masked.afa --boot 10
+Seed:    197775 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Wed May 27 18:35:09 2020
+Kernel:  AVX+FMA - 1 threads (4 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 4 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file mcr.masked.afa ... Fasta format detected
+Alignment most likely contains protein sequences
+Alignment has 38 sequences with 473 columns, 405 distinct patterns
+371 parsimony-informative, 11 singleton sites, 91 constant sites
+                       Gap/Ambiguity  Composition  p-value
+   1  gb|AKF16168|ARO          0.42%    passed     98.88%
+   2  gb|ASU10319.1|ARO        0.85%    passed     92.73%
+   3  gb|WP_001572373.1|ARO    0.85%    passed     71.00%
+   4  gb|APM84488.1|ARO        0.42%    passed     99.18%
+   5  gb|ATM29809.1|ARO        0.42%    passed     98.88%
+   6  gb|AVZ47168.1|ARO        0.85%    passed     99.07%
+   7  gb|AQQ11622.1|ARO        0.42%    passed     98.89%
+   8  gb|BBB21811.1|ARO        0.42%    passed     98.88%
+   9  gb|AVK94777.1|ARO        1.06%    passed     87.64%
+  10  gb|AQY61516.1|ARO        0.42%    passed     98.88%
+  11  gb|AVM85874.1|ARO        0.42%    passed     99.15%
+  12  gb|AUI38915.1|ARO        1.06%    passed     75.06%
+  13  gb|SBZ31568.1|ARO        0.85%    passed     98.62%
+  14  gb|AVK94779.1|ARO        1.06%    passed     88.88%
+  15  gb|AVK94778.1|ARO        1.06%    passed     86.97%
+  16  gb|AVM85875.1|ARO        3.17%    failed      0.00%
+  17  gb|SBV31106.1|ARO        0.63%    passed     95.32%
+  18  gb|ASF81896.1|ARO        0.85%    passed     98.44%
+  19  gb|ANR95875.1|ARO        0.42%    passed     98.88%
+  20  gb|ASR73329.1|ARO        1.06%    passed     81.44%
+  21  gb|ASK40551.1|ARO        3.17%    failed      0.00%
+  22  gb|AUN87920.1|ARO        0.85%    passed     98.60%
+  23  gb|ASK49942.1|ARO        0.63%    passed     97.80%
+  24  gb|ASK49941.1|ARO        0.63%    passed     97.70%
+  25  gb|AST36140.1|ARO        0.85%    passed     94.73%
+  26  gb|ATQ63376.1|ARO        0.85%    passed     98.52%
+  27  gb|ASU04896.1|ARO        0.85%    passed     97.24%
+  28  gb|ASK49940.1|ARO        0.42%    passed     99.01%
+  29  gb|AVA31022.1|ARO        0.42%    passed     98.74%
+  30  gb|AST36144.1|ARO        0.85%    passed     97.38%
+  31  gb|AST36143.1|ARO        0.85%    passed     89.76%
+  32  gb|AST36141.1|ARO        0.85%    passed     98.85%
+  33  gb|OYN70668.1|ARO        0.85%    passed     98.44%
+  34  gb|AQK48217.1|ARO        0.42%    passed     98.18%
+  35  gb|ANJ15621.1|ARO        0.42%    passed     98.88%
+  36  gb|APM87143.1|ARO        0.42%    passed     99.32%
+  37  gb|AVX52225.1|ARO        1.48%    passed      6.18%
+  38  gb|AUR80098.1|ARO        0.85%    passed     83.31%
+****  TOTAL                    0.85%  2 sequences failed composition chi2 test (p-value<5%; df=19)
+
+===> START BOOTSTRAP REPLICATE NUMBER 1
+
+Creating bootstrap alignment (seed: 197775)...
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.008 seconds
+
+NOTE: 6 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -6993.087
+2. Current log-likelihood: -6958.329
+3. Current log-likelihood: -6957.770
+Optimal log-likelihood: -6957.736
+Gamma shape alpha: 1.175
+Parameters optimization took 3 rounds (0.669 sec)
+Computing ML distances based on estimated model parameters... 0.163 sec
+Computing BIONJ tree...
+0.001 seconds
+Log-likelihood of BIONJ tree: -6998.952
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.581 second
+Computing log-likelihood of 98 initial trees ... 3.588 seconds
+Current best score: -6957.736
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -6957.729
+Iteration 10 / LogL: -6957.730 / Time: 0h:0m:15s
+Iteration 20 / LogL: -6957.730 / Time: 0h:0m:23s
+Finish initializing candidate tree set (20)
+Current best tree score: -6957.729 / CPU time: 21.732
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 24: -6957.336
+Iteration 30 / LogL: -6985.233 / Time: 0h:0m:33s (0h:1m:48s left)
+Iteration 40 / LogL: -6957.338 / Time: 0h:0m:45s (0h:1m:37s left)
+Iteration 50 / LogL: -6957.339 / Time: 0h:0m:56s (0h:1m:24s left)
+BETTER TREE FOUND at iteration 60: -6957.336
+Iteration 60 / LogL: -6957.336 / Time: 0h:1m:7s (0h:1m:54s left)
+Iteration 70 / LogL: -6957.337 / Time: 0h:1m:15s (0h:1m:38s left)
+Iteration 80 / LogL: -6981.313 / Time: 0h:1m:26s (0h:1m:27s left)
+Iteration 90 / LogL: -6981.313 / Time: 0h:1m:36s (0h:1m:15s left)
+BETTER TREE FOUND at iteration 92: -6957.336
+Iteration 100 / LogL: -6981.313 / Time: 0h:1m:45s (0h:1m:37s left)
+Iteration 110 / LogL: -6957.337 / Time: 0h:1m:55s (0h:1m:27s left)
+Iteration 120 / LogL: -6959.807 / Time: 0h:2m:6s (0h:1m:16s left)
+Iteration 130 / LogL: -6957.336 / Time: 0h:2m:16s (0h:1m:5s left)
+BETTER TREE FOUND at iteration 131: -6957.336
+Iteration 140 / LogL: -7010.092 / Time: 0h:2m:25s (0h:1m:35s left)
+BETTER TREE FOUND at iteration 148: -6957.336
+Iteration 150 / LogL: -6959.808 / Time: 0h:2m:33s (0h:1m:40s left)
+BETTER TREE FOUND at iteration 152: -6957.336
+Iteration 160 / LogL: -6959.808 / Time: 0h:2m:42s (0h:1m:33s left)
+Iteration 170 / LogL: -6960.207 / Time: 0h:2m:54s (0h:1m:24s left)
+Iteration 180 / LogL: -6957.337 / Time: 0h:3m:4s (0h:1m:14s left)
+Iteration 190 / LogL: -6957.336 / Time: 0h:3m:14s (0h:1m:3s left)
+Iteration 200 / LogL: -6957.337 / Time: 0h:3m:24s (0h:0m:53s left)
+Iteration 210 / LogL: -6957.336 / Time: 0h:3m:35s (0h:0m:43s left)
+Iteration 220 / LogL: -6957.338 / Time: 0h:3m:45s (0h:0m:32s left)
+BETTER TREE FOUND at iteration 221: -6957.336
+BETTER TREE FOUND at iteration 223: -6957.336
+Iteration 230 / LogL: -6957.336 / Time: 0h:3m:56s (0h:1m:36s left)
+Iteration 240 / LogL: -6959.808 / Time: 0h:4m:7s (0h:1m:25s left)
+BETTER TREE FOUND at iteration 244: -6957.336
+Iteration 250 / LogL: -6957.337 / Time: 0h:4m:15s (0h:1m:36s left)
+Iteration 260 / LogL: -6981.313 / Time: 0h:4m:28s (0h:1m:27s left)
+Iteration 270 / LogL: -6962.334 / Time: 0h:4m:36s (0h:1m:16s left)
+Iteration 280 / LogL: -6959.809 / Time: 0h:4m:47s (0h:1m:5s left)
+Iteration 290 / LogL: -6957.337 / Time: 0h:4m:57s (0h:0m:55s left)
+Iteration 300 / LogL: -6957.742 / Time: 0h:5m:10s (0h:0m:45s left)
+Iteration 310 / LogL: -6960.357 / Time: 0h:5m:21s (0h:0m:35s left)
+Iteration 320 / LogL: -6957.336 / Time: 0h:5m:31s (0h:0m:24s left)
+Iteration 330 / LogL: -6962.564 / Time: 0h:5m:43s (0h:0m:14s left)
+Iteration 340 / LogL: -6957.336 / Time: 0h:5m:53s (0h:0m:4s left)
+TREE SEARCH COMPLETED AFTER 345 ITERATIONS / Time: 0h:5m:59s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -6957.336
+Optimal log-likelihood: -6957.336
+Gamma shape alpha: 1.155
+Parameters optimization took 1 rounds (0.215 sec)
+BEST SCORE FOUND : -6957.336
+Total tree length: 4.960
+
+Total number of iterations: 345
+CPU time used for tree search: 355.884 sec (0h:5m:55s)
+Wall-clock time used for tree search: 358.460 sec (0h:5m:58s)
+Total CPU time used: 357.360 sec (0h:5m:57s)
+Total wall-clock time used: 359.953 sec (0h:5m:59s)
+
+===> START BOOTSTRAP REPLICATE NUMBER 2
+
+Creating bootstrap alignment (seed: 197776)...
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.012 seconds
+
+NOTE: 6 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -6715.275
+2. Current log-likelihood: -6672.020
+3. Current log-likelihood: -6671.692
+Optimal log-likelihood: -6671.641
+Gamma shape alpha: 1.067
+Parameters optimization took 3 rounds (0.648 sec)
+Computing ML distances based on estimated model parameters... 0.140 sec
+Computing BIONJ tree...
+0.001 seconds
+Log-likelihood of BIONJ tree: -6667.128
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.496 second
+Computing log-likelihood of 98 initial trees ... 3.797 seconds
+Current best score: -6665.258
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -6662.003
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 5: -6661.963
+Iteration 10 / LogL: -6662.047 / Time: 0h:0m:12s
+Iteration 20 / LogL: -6662.019 / Time: 0h:0m:20s
+Finish initializing candidate tree set (20)
+Current best tree score: -6661.963 / CPU time: 18.948
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+BETTER TREE FOUND at iteration 27: -6661.960
+Iteration 30 / LogL: -6663.746 / Time: 0h:0m:29s (0h:1m:37s left)
+Iteration 40 / LogL: -6661.994 / Time: 0h:0m:40s (0h:1m:30s left)
+Iteration 50 / LogL: -6703.244 / Time: 0h:0m:51s (0h:1m:20s left)
+Iteration 60 / LogL: -6661.963 / Time: 0h:1m:1s (0h:1m:9s left)
+Iteration 70 / LogL: -6661.960 / Time: 0h:1m:11s (0h:0m:59s left)
+Iteration 80 / LogL: -6662.011 / Time: 0h:1m:24s (0h:0m:50s left)
+Iteration 90 / LogL: -6662.020 / Time: 0h:1m:35s (0h:0m:39s left)
+Iteration 100 / LogL: -6662.917 / Time: 0h:1m:44s (0h:0m:28s left)
+Iteration 110 / LogL: -6662.992 / Time: 0h:1m:55s (0h:0m:17s left)
+Iteration 120 / LogL: -6808.253 / Time: 0h:2m:5s (0h:0m:7s left)
+TREE SEARCH COMPLETED AFTER 128 ITERATIONS / Time: 0h:2m:14s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -6661.960
+Optimal log-likelihood: -6661.960
+Gamma shape alpha: 1.073
+Parameters optimization took 1 rounds (0.118 sec)
+BEST SCORE FOUND : -6661.960
+Total tree length: 4.394
+
+Total number of iterations: 128
+CPU time used for tree search: 132.217 sec (0h:2m:12s)
+Wall-clock time used for tree search: 133.148 sec (0h:2m:13s)
+Total CPU time used: 133.375 sec (0h:2m:13s)
+Total wall-clock time used: 134.324 sec (0h:2m:14s)
+
+===> START BOOTSTRAP REPLICATE NUMBER 3
+
+Creating bootstrap alignment (seed: 197777)...
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.004 seconds
+
+NOTE: 6 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -7170.201
+2. Current log-likelihood: -7127.339
+3. Current log-likelihood: -7126.648
+Optimal log-likelihood: -7126.641
+Gamma shape alpha: 1.240
+Parameters optimization took 3 rounds (0.490 sec)
+Computing ML distances based on estimated model parameters... 0.155 sec
+Computing BIONJ tree...
+0.001 seconds
+Log-likelihood of BIONJ tree: -7168.993
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.571 second
+Computing log-likelihood of 98 initial trees ... 3.846 seconds
+Current best score: -7124.849
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -7119.751
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 8: -7118.040
+Iteration 10 / LogL: -7120.377 / Time: 0h:0m:13s
+Iteration 20 / LogL: -7124.068 / Time: 0h:0m:20s
+Finish initializing candidate tree set (20)
+Current best tree score: -7118.040 / CPU time: 19.802
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 24: -7117.479
+Iteration 30 / LogL: -7120.380 / Time: 0h:0m:33s (0h:1m:47s left)
+BETTER TREE FOUND at iteration 32: -7117.476
+Iteration 40 / LogL: -7117.922 / Time: 0h:0m:44s (0h:1m:45s left)
+Iteration 50 / LogL: -7196.826 / Time: 0h:0m:55s (0h:1m:32s left)
+Iteration 60 / LogL: -7159.682 / Time: 0h:1m:5s (0h:1m:19s left)
+Iteration 70 / LogL: -7117.923 / Time: 0h:1m:16s (0h:1m:9s left)
+Iteration 80 / LogL: -7119.462 / Time: 0h:1m:29s (0h:0m:58s left)
+Iteration 90 / LogL: -7219.985 / Time: 0h:1m:39s (0h:0m:46s left)
+Iteration 100 / LogL: -7119.905 / Time: 0h:1m:51s (0h:0m:36s left)
+Iteration 110 / LogL: -7119.462 / Time: 0h:2m:3s (0h:0m:24s left)
+Iteration 120 / LogL: -7117.921 / Time: 0h:2m:15s (0h:0m:13s left)
+Iteration 130 / LogL: -7119.462 / Time: 0h:2m:26s (0h:0m:2s left)
+TREE SEARCH COMPLETED AFTER 133 ITERATIONS / Time: 0h:2m:30s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -7117.476
+Optimal log-likelihood: -7117.475
+Gamma shape alpha: 1.248
+Parameters optimization took 1 rounds (0.119 sec)
+BEST SCORE FOUND : -7117.475
+Total tree length: 4.976
+
+Total number of iterations: 133
+CPU time used for tree search: 148.218 sec (0h:2m:28s)
+Wall-clock time used for tree search: 149.369 sec (0h:2m:29s)
+Total CPU time used: 149.236 sec (0h:2m:29s)
+Total wall-clock time used: 150.392 sec (0h:2m:30s)
+
+===> START BOOTSTRAP REPLICATE NUMBER 4
+
+Creating bootstrap alignment (seed: 197778)...
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.010 seconds
+
+NOTE: 6 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -6966.082
+2. Current log-likelihood: -6924.226
+3. Current log-likelihood: -6923.572
+Optimal log-likelihood: -6923.556
+Gamma shape alpha: 1.175
+Parameters optimization took 3 rounds (0.689 sec)
+Computing ML distances based on estimated model parameters... 0.163 sec
+Computing BIONJ tree...
+0.001 seconds
+Log-likelihood of BIONJ tree: -6932.287
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.991 second
+Computing log-likelihood of 98 initial trees ... 3.799 seconds
+Current best score: -6923.556
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -6919.594
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 2: -6917.525
+Iteration 10 / LogL: -6917.525 / Time: 0h:0m:15s
+Iteration 20 / LogL: -6917.525 / Time: 0h:0m:23s
+Finish initializing candidate tree set (20)
+Current best tree score: -6917.525 / CPU time: 22.300
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 26: -6913.749
+Iteration 30 / LogL: -6917.529 / Time: 0h:0m:34s (0h:1m:54s left)
+Iteration 40 / LogL: -6917.529 / Time: 0h:0m:47s (0h:1m:44s left)
+Iteration 50 / LogL: -6913.750 / Time: 0h:1m:0s (0h:1m:33s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 58: -6911.867
+Iteration 60 / LogL: -6923.599 / Time: 0h:1m:13s (0h:2m:1s left)
+Iteration 70 / LogL: -6911.870 / Time: 0h:1m:25s (0h:1m:48s left)
+Iteration 80 / LogL: -6911.868 / Time: 0h:1m:37s (0h:1m:35s left)
+BETTER TREE FOUND at iteration 90: -6911.867
+Iteration 90 / LogL: -6911.867 / Time: 0h:1m:50s (0h:2m:4s left)
+Iteration 100 / LogL: -6911.868 / Time: 0h:2m:1s (0h:1m:50s left)
+Iteration 110 / LogL: -6911.871 / Time: 0h:2m:11s (0h:1m:36s left)
+BETTER TREE FOUND at iteration 117: -6911.867
+Iteration 120 / LogL: -6912.142 / Time: 0h:2m:22s (0h:1m:55s left)
+Iteration 130 / LogL: -6914.089 / Time: 0h:2m:33s (0h:1m:43s left)
+Iteration 140 / LogL: -6911.869 / Time: 0h:2m:45s (0h:1m:31s left)
+Iteration 150 / LogL: -6911.868 / Time: 0h:2m:56s (0h:1m:19s left)
+Iteration 160 / LogL: -6911.868 / Time: 0h:3m:9s (0h:1m:7s left)
+Iteration 170 / LogL: -6911.867 / Time: 0h:3m:20s (0h:0m:55s left)
+Iteration 180 / LogL: -6911.868 / Time: 0h:3m:32s (0h:0m:43s left)
+Iteration 190 / LogL: -6912.142 / Time: 0h:3m:44s (0h:0m:32s left)
+Iteration 200 / LogL: -6912.143 / Time: 0h:3m:55s (0h:0m:20s left)
+Iteration 210 / LogL: -6912.142 / Time: 0h:4m:7s (0h:0m:8s left)
+TREE SEARCH COMPLETED AFTER 218 ITERATIONS / Time: 0h:4m:19s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -6911.867
+Optimal log-likelihood: -6911.867
+Gamma shape alpha: 1.195
+Parameters optimization took 1 rounds (0.114 sec)
+BEST SCORE FOUND : -6911.867
+Total tree length: 4.851
+
+Total number of iterations: 218
+CPU time used for tree search: 256.062 sec (0h:4m:16s)
+Wall-clock time used for tree search: 258.157 sec (0h:4m:18s)
+Total CPU time used: 257.795 sec (0h:4m:17s)
+Total wall-clock time used: 259.902 sec (0h:4m:19s)
+
+===> START BOOTSTRAP REPLICATE NUMBER 5
+
+Creating bootstrap alignment (seed: 197779)...
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.006 seconds
+
+NOTE: 6 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -7252.511
+2. Current log-likelihood: -7208.494
+3. Current log-likelihood: -7207.802
+Optimal log-likelihood: -7207.748
+Gamma shape alpha: 1.119
+Parameters optimization took 3 rounds (0.580 sec)
+Computing ML distances based on estimated model parameters... 0.164 sec
+Computing BIONJ tree...
+0.001 seconds
+Log-likelihood of BIONJ tree: -7216.676
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.606 second
+Computing log-likelihood of 98 initial trees ... 4.256 seconds
+Current best score: -7207.748
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -7204.481
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 2: -7203.349
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 3: -7201.632
+Iteration 10 / LogL: -7205.419 / Time: 0h:0m:16s
+Iteration 20 / LogL: -7205.853 / Time: 0h:0m:27s
+Finish initializing candidate tree set (20)
+Current best tree score: -7201.632 / CPU time: 25.827
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 22: -7201.010
+BETTER TREE FOUND at iteration 24: -7201.009
+Iteration 30 / LogL: -7282.261 / Time: 0h:0m:41s (0h:2m:13s left)
+Iteration 40 / LogL: -7202.211 / Time: 0h:0m:53s (0h:1m:56s left)
+Iteration 50 / LogL: -7203.341 / Time: 0h:1m:8s (0h:1m:42s left)
+Iteration 60 / LogL: -7201.012 / Time: 0h:1m:22s (0h:1m:29s left)
+Iteration 70 / LogL: -7202.589 / Time: 0h:1m:36s (0h:1m:15s left)
+BETTER TREE FOUND at iteration 80: -7201.009
+Iteration 80 / LogL: -7201.009 / Time: 0h:1m:51s (0h:2m:21s left)
+Iteration 90 / LogL: -7201.657 / Time: 0h:2m:6s (0h:2m:7s left)
+Iteration 100 / LogL: -7202.958 / Time: 0h:2m:20s (0h:1m:53s left)
+Iteration 110 / LogL: -7201.014 / Time: 0h:2m:34s (0h:1m:38s left)
+BETTER TREE FOUND at iteration 115: -7201.009
+BETTER TREE FOUND at iteration 116: -7201.008
+Iteration 120 / LogL: -7201.010 / Time: 0h:2m:48s (0h:2m:16s left)
+Iteration 130 / LogL: -7201.646 / Time: 0h:3m:3s (0h:2m:2s left)
+Iteration 140 / LogL: -7201.010 / Time: 0h:3m:17s (0h:1m:48s left)
+Iteration 150 / LogL: -7201.688 / Time: 0h:3m:33s (0h:1m:34s left)
+Iteration 160 / LogL: -7201.009 / Time: 0h:3m:49s (0h:1m:20s left)
+Iteration 170 / LogL: -7201.679 / Time: 0h:4m:2s (0h:1m:6s left)
+Iteration 180 / LogL: -7201.045 / Time: 0h:4m:15s (0h:0m:51s left)
+Iteration 190 / LogL: -7202.008 / Time: 0h:4m:30s (0h:0m:37s left)
+Iteration 200 / LogL: -7201.656 / Time: 0h:4m:45s (0h:0m:22s left)
+Iteration 210 / LogL: -7228.426 / Time: 0h:4m:58s (0h:0m:8s left)
+TREE SEARCH COMPLETED AFTER 217 ITERATIONS / Time: 0h:5m:9s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -7201.008
+Optimal log-likelihood: -7201.008
+Gamma shape alpha: 1.162
+Parameters optimization took 1 rounds (0.109 sec)
+BEST SCORE FOUND : -7201.008
+Total tree length: 5.384
+
+Total number of iterations: 217
+CPU time used for tree search: 305.742 sec (0h:5m:5s)
+Wall-clock time used for tree search: 308.028 sec (0h:5m:8s)
+Total CPU time used: 307.093 sec (0h:5m:7s)
+Total wall-clock time used: 309.390 sec (0h:5m:9s)
+
+===> START BOOTSTRAP REPLICATE NUMBER 6
+
+Creating bootstrap alignment (seed: 197780)...
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.008 seconds
+
+NOTE: 6 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -7248.964
+2. Current log-likelihood: -7204.956
+3. Current log-likelihood: -7204.552
+Optimal log-likelihood: -7204.537
+Gamma shape alpha: 1.259
+Parameters optimization took 3 rounds (0.724 sec)
+Computing ML distances based on estimated model parameters... 0.154 sec
+Computing BIONJ tree...
+0.001 seconds
+Log-likelihood of BIONJ tree: -7238.263
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.526 second
+Computing log-likelihood of 98 initial trees ... 3.881 seconds
+Current best score: -7201.527
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -7188.148
+BETTER TREE FOUND at iteration 3: -7188.147
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 4: -7183.034
+BETTER TREE FOUND at iteration 6: -7183.034
+Iteration 10 / LogL: -7188.148 / Time: 0h:0m:15s
+Iteration 20 / LogL: -7195.258 / Time: 0h:0m:25s
+Finish initializing candidate tree set (20)
+Current best tree score: -7183.034 / CPU time: 24.663
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -7183.035 / Time: 0h:0m:36s (0h:1m:35s left)
+BETTER TREE FOUND at iteration 32: -7183.034
+Iteration 40 / LogL: -7301.694 / Time: 0h:0m:51s (0h:2m:0s left)
+BETTER TREE FOUND at iteration 45: -7183.033
+Iteration 50 / LogL: -7183.035 / Time: 0h:1m:4s (0h:2m:4s left)
+Iteration 60 / LogL: -7183.038 / Time: 0h:1m:16s (0h:1m:49s left)
+Iteration 70 / LogL: -7183.034 / Time: 0h:1m:28s (0h:1m:36s left)
+Iteration 80 / LogL: -7183.035 / Time: 0h:1m:39s (0h:1m:22s left)
+Iteration 90 / LogL: -7183.037 / Time: 0h:1m:52s (0h:1m:9s left)
+Iteration 100 / LogL: -7183.038 / Time: 0h:2m:2s (0h:0m:55s left)
+Iteration 110 / LogL: -7183.035 / Time: 0h:2m:15s (0h:0m:43s left)
+Iteration 120 / LogL: -7183.037 / Time: 0h:2m:26s (0h:0m:30s left)
+Iteration 130 / LogL: -7183.037 / Time: 0h:2m:38s (0h:0m:18s left)
+BETTER TREE FOUND at iteration 138: -7183.033
+Iteration 140 / LogL: -7183.035 / Time: 0h:2m:51s (0h:2m:0s left)
+Iteration 150 / LogL: -7183.035 / Time: 0h:3m:4s (0h:1m:49s left)
+Iteration 160 / LogL: -7214.773 / Time: 0h:3m:17s (0h:1m:36s left)
+Iteration 170 / LogL: -7183.035 / Time: 0h:3m:29s (0h:1m:24s left)
+BETTER TREE FOUND at iteration 179: -7183.033
+Iteration 180 / LogL: -7183.037 / Time: 0h:3m:41s (0h:2m:2s left)
+Iteration 190 / LogL: -7183.034 / Time: 0h:3m:53s (0h:1m:50s left)
+BETTER TREE FOUND at iteration 200: -7183.033
+Iteration 200 / LogL: -7183.033 / Time: 0h:4m:5s (0h:2m:3s left)
+Iteration 210 / LogL: -7183.037 / Time: 0h:4m:19s (0h:1m:51s left)
+Iteration 220 / LogL: -7183.037 / Time: 0h:4m:30s (0h:1m:38s left)
+Iteration 230 / LogL: -7183.036 / Time: 0h:4m:42s (0h:1m:26s left)
+Iteration 240 / LogL: -7183.035 / Time: 0h:4m:55s (0h:1m:14s left)
+Iteration 250 / LogL: -7308.231 / Time: 0h:5m:6s (0h:1m:1s left)
+Iteration 260 / LogL: -7196.747 / Time: 0h:5m:16s (0h:0m:48s left)
+Iteration 270 / LogL: -7183.035 / Time: 0h:5m:29s (0h:0m:36s left)
+Iteration 280 / LogL: -7183.038 / Time: 0h:5m:40s (0h:0m:24s left)
+Iteration 290 / LogL: -7183.034 / Time: 0h:5m:50s (0h:0m:12s left)
+Iteration 300 / LogL: -7183.035 / Time: 0h:6m:0s (0h:0m:0s left)
+TREE SEARCH COMPLETED AFTER 301 ITERATIONS / Time: 0h:6m:2s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -7183.033
+Optimal log-likelihood: -7183.033
+Gamma shape alpha: 1.291
+Parameters optimization took 1 rounds (0.113 sec)
+BEST SCORE FOUND : -7183.033
+Total tree length: 4.973
+
+Total number of iterations: 301
+CPU time used for tree search: 358.036 sec (0h:5m:58s)
+Wall-clock time used for tree search: 360.975 sec (0h:6m:0s)
+Total CPU time used: 359.181 sec (0h:5m:59s)
+Total wall-clock time used: 362.126 sec (0h:6m:2s)
+
+===> START BOOTSTRAP REPLICATE NUMBER 7
+
+Creating bootstrap alignment (seed: 197781)...
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.005 seconds
+
+NOTE: 6 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -7148.886
+2. Current log-likelihood: -7099.083
+3. Current log-likelihood: -7097.952
+Optimal log-likelihood: -7097.931
+Gamma shape alpha: 1.123
+Parameters optimization took 3 rounds (0.480 sec)
+Computing ML distances based on estimated model parameters... 0.163 sec
+Computing BIONJ tree...
+0.001 seconds
+Log-likelihood of BIONJ tree: -7117.836
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.502 second
+Computing log-likelihood of 98 initial trees ... 3.531 seconds
+Current best score: -7097.931
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -7093.768
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 2: -7091.602
+Iteration 10 / LogL: -7093.324 / Time: 0h:0m:12s
+Iteration 20 / LogL: -7095.461 / Time: 0h:0m:19s
+Finish initializing candidate tree set (20)
+Current best tree score: -7091.602 / CPU time: 18.309
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -7091.603 / Time: 0h:0m:29s (0h:1m:14s left)
+Iteration 40 / LogL: -7191.922 / Time: 0h:0m:41s (0h:1m:6s left)
+Iteration 50 / LogL: -7091.606 / Time: 0h:0m:52s (0h:0m:55s left)
+Iteration 60 / LogL: -7091.603 / Time: 0h:1m:2s (0h:0m:44s left)
+Iteration 70 / LogL: -7091.605 / Time: 0h:1m:13s (0h:0m:34s left)
+Iteration 80 / LogL: -7091.603 / Time: 0h:1m:24s (0h:0m:23s left)
+Iteration 90 / LogL: -7332.091 / Time: 0h:1m:37s (0h:0m:13s left)
+Iteration 100 / LogL: -7091.606 / Time: 0h:1m:47s (0h:0m:2s left)
+TREE SEARCH COMPLETED AFTER 103 ITERATIONS / Time: 0h:1m:50s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -7091.602
+Optimal log-likelihood: -7091.602
+Gamma shape alpha: 1.151
+Parameters optimization took 1 rounds (0.109 sec)
+BEST SCORE FOUND : -7091.602
+Total tree length: 4.870
+
+Total number of iterations: 103
+CPU time used for tree search: 109.386 sec (0h:1m:49s)
+Wall-clock time used for tree search: 110.008 sec (0h:1m:50s)
+Total CPU time used: 110.396 sec (0h:1m:50s)
+Total wall-clock time used: 111.022 sec (0h:1m:51s)
+
+===> START BOOTSTRAP REPLICATE NUMBER 8
+
+Creating bootstrap alignment (seed: 197782)...
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.006 seconds
+
+NOTE: 6 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -7123.820
+2. Current log-likelihood: -7083.363
+3. Current log-likelihood: -7082.907
+Optimal log-likelihood: -7082.899
+Gamma shape alpha: 1.147
+Parameters optimization took 3 rounds (0.483 sec)
+Computing ML distances based on estimated model parameters... 0.156 sec
+Computing BIONJ tree...
+0.001 seconds
+Log-likelihood of BIONJ tree: -7102.012
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.555 second
+Computing log-likelihood of 98 initial trees ... 3.586 seconds
+Current best score: -7082.556
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -7072.355
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 7: -7072.188
+Iteration 10 / LogL: -7074.060 / Time: 0h:0m:13s
+BETTER TREE FOUND at iteration 16: -7072.188
+Iteration 20 / LogL: -7074.598 / Time: 0h:0m:21s
+Finish initializing candidate tree set (20)
+Current best tree score: -7072.188 / CPU time: 20.357
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+BETTER TREE FOUND at iteration 26: -7072.188
+Iteration 30 / LogL: -7072.188 / Time: 0h:0m:31s (0h:1m:44s left)
+Iteration 40 / LogL: -7072.369 / Time: 0h:0m:42s (0h:1m:34s left)
+BETTER TREE FOUND at iteration 48: -7072.187
+Iteration 50 / LogL: -7072.189 / Time: 0h:0m:54s (0h:1m:49s left)
+Iteration 60 / LogL: -7072.371 / Time: 0h:1m:6s (0h:1m:38s left)
+Iteration 70 / LogL: -7072.356 / Time: 0h:1m:17s (0h:1m:27s left)
+Iteration 80 / LogL: -7127.304 / Time: 0h:1m:27s (0h:1m:15s left)
+BETTER TREE FOUND at iteration 89: -7072.187
+Iteration 90 / LogL: -7123.341 / Time: 0h:1m:39s (0h:1m:50s left)
+Iteration 100 / LogL: -7072.373 / Time: 0h:1m:50s (0h:1m:39s left)
+Iteration 110 / LogL: -7073.731 / Time: 0h:2m:1s (0h:1m:28s left)
+Iteration 120 / LogL: -7072.188 / Time: 0h:2m:13s (0h:1m:17s left)
+Iteration 130 / LogL: -7072.188 / Time: 0h:2m:24s (0h:1m:5s left)
+Iteration 140 / LogL: -7109.252 / Time: 0h:2m:35s (0h:0m:54s left)
+Iteration 150 / LogL: -7072.369 / Time: 0h:2m:47s (0h:0m:43s left)
+Iteration 160 / LogL: -7072.188 / Time: 0h:2m:59s (0h:0m:32s left)
+Iteration 170 / LogL: -7072.188 / Time: 0h:3m:10s (0h:0m:21s left)
+Iteration 180 / LogL: -7074.062 / Time: 0h:3m:22s (0h:0m:10s left)
+Iteration 190 / LogL: -7072.188 / Time: 0h:3m:32s (0h:0m:-2s left)
+TREE SEARCH COMPLETED AFTER 190 ITERATIONS / Time: 0h:3m:32s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -7072.187
+Optimal log-likelihood: -7072.187
+Gamma shape alpha: 1.174
+Parameters optimization took 1 rounds (0.111 sec)
+BEST SCORE FOUND : -7072.187
+Total tree length: 5.134
+
+Total number of iterations: 190
+CPU time used for tree search: 210.502 sec (0h:3m:30s)
+Wall-clock time used for tree search: 212.104 sec (0h:3m:32s)
+Total CPU time used: 211.406 sec (0h:3m:31s)
+Total wall-clock time used: 213.013 sec (0h:3m:33s)
+
+===> START BOOTSTRAP REPLICATE NUMBER 9
+
+Creating bootstrap alignment (seed: 197783)...
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.005 seconds
+
+NOTE: 6 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -6952.638
+2. Current log-likelihood: -6909.399
+3. Current log-likelihood: -6909.062
+Optimal log-likelihood: -6909.046
+Gamma shape alpha: 0.895
+Parameters optimization took 3 rounds (0.707 sec)
+Computing ML distances based on estimated model parameters... 0.202 sec
+Computing BIONJ tree...
+0.001 seconds
+Log-likelihood of BIONJ tree: -6926.484
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.584 second
+Computing log-likelihood of 98 initial trees ... 3.528 seconds
+Current best score: -6909.046
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -6909.045
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 2: -6908.900
+Iteration 10 / LogL: -6908.945 / Time: 0h:0m:14s
+BETTER TREE FOUND at iteration 14: -6908.897
+Iteration 20 / LogL: -6908.959 / Time: 0h:0m:23s
+Finish initializing candidate tree set (20)
+Current best tree score: -6908.897 / CPU time: 22.069
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 25: -6907.828
+BETTER TREE FOUND at iteration 29: -6907.827
+Iteration 30 / LogL: -6969.732 / Time: 0h:0m:34s (0h:1m:56s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 33: -6907.776
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 36: -6907.750
+Iteration 40 / LogL: -6907.846 / Time: 0h:0m:45s (0h:1m:51s left)
+BETTER TREE FOUND at iteration 48: -6907.750
+Iteration 50 / LogL: -6907.852 / Time: 0h:0m:56s (0h:1m:53s left)
+Iteration 60 / LogL: -6908.011 / Time: 0h:1m:8s (0h:1m:42s left)
+Iteration 70 / LogL: -6907.875 / Time: 0h:1m:19s (0h:1m:30s left)
+BETTER TREE FOUND at iteration 72: -6907.750
+Iteration 80 / LogL: -6907.844 / Time: 0h:1m:31s (0h:1m:46s left)
+Iteration 90 / LogL: -6907.808 / Time: 0h:1m:43s (0h:1m:35s left)
+BETTER TREE FOUND at iteration 96: -6907.749
+Iteration 100 / LogL: -6994.136 / Time: 0h:1m:53s (0h:1m:50s left)
+Iteration 110 / LogL: -6918.033 / Time: 0h:2m:3s (0h:1m:37s left)
+Iteration 120 / LogL: -6907.842 / Time: 0h:2m:13s (0h:1m:25s left)
+Iteration 130 / LogL: -6907.831 / Time: 0h:2m:23s (0h:1m:13s left)
+Iteration 140 / LogL: -6907.997 / Time: 0h:2m:34s (0h:1m:2s left)
+Iteration 150 / LogL: -6907.840 / Time: 0h:2m:43s (0h:0m:50s left)
+Iteration 160 / LogL: -6907.841 / Time: 0h:2m:54s (0h:0m:39s left)
+BETTER TREE FOUND at iteration 164: -6907.749
+Iteration 170 / LogL: -6919.426 / Time: 0h:3m:4s (0h:1m:42s left)
+Iteration 180 / LogL: -7033.175 / Time: 0h:3m:17s (0h:1m:32s left)
+Iteration 190 / LogL: -6907.876 / Time: 0h:3m:27s (0h:1m:21s left)
+Iteration 200 / LogL: -6907.905 / Time: 0h:3m:38s (0h:1m:10s left)
+Iteration 210 / LogL: -6907.813 / Time: 0h:3m:49s (0h:0m:59s left)
+Iteration 220 / LogL: -6907.845 / Time: 0h:4m:0s (0h:0m:48s left)
+Iteration 230 / LogL: -6907.863 / Time: 0h:4m:11s (0h:0m:37s left)
+Iteration 240 / LogL: -6910.723 / Time: 0h:4m:22s (0h:0m:26s left)
+Iteration 250 / LogL: -6907.840 / Time: 0h:4m:33s (0h:0m:15s left)
+Iteration 260 / LogL: -6908.007 / Time: 0h:4m:43s (0h:0m:4s left)
+TREE SEARCH COMPLETED AFTER 265 ITERATIONS / Time: 0h:4m:48s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -6907.749
+Optimal log-likelihood: -6907.749
+Gamma shape alpha: 0.891
+Parameters optimization took 1 rounds (0.106 sec)
+BEST SCORE FOUND : -6907.749
+Total tree length: 5.166
+
+Total number of iterations: 265
+CPU time used for tree search: 284.969 sec (0h:4m:44s)
+Wall-clock time used for tree search: 286.831 sec (0h:4m:46s)
+Total CPU time used: 286.328 sec (0h:4m:46s)
+Total wall-clock time used: 288.223 sec (0h:4m:48s)
+
+===> START BOOTSTRAP REPLICATE NUMBER 10
+
+Creating bootstrap alignment (seed: 197784)...
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.005 seconds
+
+NOTE: 6 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -6953.796
+2. Current log-likelihood: -6909.661
+3. Current log-likelihood: -6909.517
+Optimal log-likelihood: -6909.516
+Gamma shape alpha: 1.043
+Parameters optimization took 3 rounds (0.452 sec)
+Computing ML distances based on estimated model parameters... 0.154 sec
+Computing BIONJ tree...
+0.001 seconds
+Log-likelihood of BIONJ tree: -6921.296
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.597 second
+Computing log-likelihood of 98 initial trees ... 3.588 seconds
+Current best score: -6909.516
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -6908.067
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 2: -6906.509
+BETTER TREE FOUND at iteration 8: -6906.509
+Iteration 10 / LogL: -6906.509 / Time: 0h:0m:11s
+Iteration 20 / LogL: -6906.509 / Time: 0h:0m:18s
+Finish initializing candidate tree set (20)
+Current best tree score: -6906.509 / CPU time: 17.185
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -6906.509 / Time: 0h:0m:27s (0h:1m:14s left)
+Iteration 40 / LogL: -6906.511 / Time: 0h:0m:37s (0h:1m:5s left)
+Iteration 50 / LogL: -6906.509 / Time: 0h:0m:47s (0h:0m:56s left)
+Iteration 60 / LogL: -6906.511 / Time: 0h:0m:57s (0h:0m:46s left)
+Iteration 70 / LogL: -6906.511 / Time: 0h:1m:7s (0h:0m:37s left)
+Iteration 80 / LogL: -6906.509 / Time: 0h:1m:16s (0h:0m:27s left)
+Iteration 90 / LogL: -6906.510 / Time: 0h:1m:26s (0h:0m:17s left)
+Iteration 100 / LogL: -6906.510 / Time: 0h:1m:35s (0h:0m:7s left)
+TREE SEARCH COMPLETED AFTER 109 ITERATIONS / Time: 0h:1m:44s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -6906.509
+Optimal log-likelihood: -6906.509
+Gamma shape alpha: 1.039
+Parameters optimization took 1 rounds (0.114 sec)
+BEST SCORE FOUND : -6906.509
+Total tree length: 4.817
+
+Total number of iterations: 109
+CPU time used for tree search: 102.633 sec (0h:1m:42s)
+Wall-clock time used for tree search: 103.397 sec (0h:1m:43s)
+Total CPU time used: 103.709 sec (0h:1m:43s)
+Total wall-clock time used: 104.475 sec (0h:1m:44s)
+
+===> COMPUTE CONSENSUS TREE FROM 10BOOTSTRAP TREES
+
+Reading tree(s) file mcr.masked.afa.boottrees ...
+10 tree(s) loaded (0 rooted and 10 unrooted)
+0 split(s) discarded because frequency <= -1.000
+192 splits found
+Consensus tree written to mcr.masked.afa.contree
+
+===> START ANALYSIS ON THE ORIGINAL ALIGNMENT
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.005 seconds
+
+NOTE: 10 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -7121.390
+2. Current log-likelihood: -7081.621
+3. Current log-likelihood: -7081.205
+Optimal log-likelihood: -7081.177
+Gamma shape alpha: 1.094
+Parameters optimization took 3 rounds (0.699 sec)
+Computing ML distances based on estimated model parameters... 0.147 sec
+Computing BIONJ tree...
+0.001 seconds
+Log-likelihood of BIONJ tree: -7117.853
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.443 second
+Computing log-likelihood of 98 initial trees ... 5.454 seconds
+Current best score: -7081.177
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -7078.246
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 2: -7077.598
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 3: -7075.902
+Iteration 10 / LogL: -7080.001 / Time: 0h:0m:18s
+Iteration 20 / LogL: -7075.910 / Time: 0h:0m:29s
+Finish initializing candidate tree set (20)
+Current best tree score: -7075.902 / CPU time: 28.555
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 26: -7075.873
+Iteration 30 / LogL: -7078.150 / Time: 0h:0m:48s (0h:2m:41s left)
+Iteration 40 / LogL: -7084.609 / Time: 0h:1m:5s (0h:2m:24s left)
+Iteration 50 / LogL: -7075.946 / Time: 0h:1m:21s (0h:2m:6s left)
+Iteration 60 / LogL: -7075.922 / Time: 0h:1m:37s (0h:1m:49s left)
+Iteration 70 / LogL: -7075.937 / Time: 0h:1m:53s (0h:1m:32s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 78: -7074.763
+Iteration 80 / LogL: -7075.932 / Time: 0h:2m:11s (0h:2m:42s left)
+Iteration 90 / LogL: -7140.932 / Time: 0h:2m:33s (0h:2m:32s left)
+BETTER TREE FOUND at iteration 97: -7074.761
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 99: -7074.732
+Iteration 100 / LogL: -7075.901 / Time: 0h:2m:53s (0h:2m:53s left)
+Iteration 110 / LogL: -7077.478 / Time: 0h:3m:9s (0h:2m:34s left)
+Iteration 120 / LogL: -7074.761 / Time: 0h:3m:28s (0h:2m:18s left)
+Iteration 130 / LogL: -7077.509 / Time: 0h:3m:47s (0h:2m:1s left)
+Iteration 140 / LogL: -7074.771 / Time: 0h:4m:6s (0h:1m:44s left)
+Iteration 150 / LogL: -7076.031 / Time: 0h:4m:25s (0h:1m:27s left)
+Iteration 160 / LogL: -7077.982 / Time: 0h:4m:43s (0h:1m:9s left)
+Iteration 170 / LogL: -7074.766 / Time: 0h:5m:3s (0h:0m:52s left)
+Iteration 180 / LogL: -7074.791 / Time: 0h:5m:22s (0h:0m:34s left)
+Iteration 190 / LogL: -7074.813 / Time: 0h:5m:42s (0h:0m:16s left)
+Iteration 200 / LogL: -7077.896 / Time: 0h:6m:1s (0h:0m:-2s left)
+TREE SEARCH COMPLETED AFTER 200 ITERATIONS / Time: 0h:6m:1s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -7074.732
+Optimal log-likelihood: -7074.730
+Gamma shape alpha: 1.099
+Parameters optimization took 1 rounds (0.176 sec)
+BEST SCORE FOUND : -7074.730
+Total tree length: 4.978
+
+Total number of iterations: 200
+CPU time used for tree search: 358.422 sec (0h:5m:58s)
+Wall-clock time used for tree search: 360.651 sec (0h:6m:0s)
+Total CPU time used: 359.701 sec (0h:5m:59s)
+Total wall-clock time used: 361.937 sec (0h:6m:1s)
+Reading input trees file mcr.masked.afa.contree
+Log-likelihood of consensus tree: -7089.772
+
+===> ASSIGN BOOTSTRAP SUPPORTS TO THE TREE FROM ORIGINAL ALIGNMENT
+
+Reading tree mcr.masked.afa.treefile ...
+unrooted tree detected
+Reading tree(s) file mcr.masked.afa.boottrees ...
+10 tree(s) loaded (0 rooted and 10 unrooted)
+Rescaling split weights by 10.000
+192 splits found
+Creating bootstrap support values...
+Tree with assigned support written to mcr.masked.afa.treefile
+
+Analysis results written to: 
+  IQ-TREE report:                mcr.masked.afa.iqtree
+  Maximum-likelihood tree:       mcr.masked.afa.treefile
+  Likelihood distances:          mcr.masked.afa.mldist
+  Screen log file:               mcr.masked.afa.log
+
+Total CPU time for bootstrap: 2636.206 seconds.
+Total wall-clock time for bootstrap: 2655.393 seconds.
+
+Non-parametric bootstrap results written to:
+Bootstrap trees:          mcr.masked.afa.boottrees
+  Consensus tree:           mcr.masked.afa.contree
+
+Date and Time: Wed May 27 19:19:24 2020

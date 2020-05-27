@@ -1,0 +1,241 @@
+IQ-TREE 2.0.3 built Apr 26 2020
+
+Input file name: mcr.masked.afa
+Type of analysis: tree reconstruction + non-parametric bootstrap (10 replicates)
+Random seed number: 197775
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 38 sequences with 473 amino-acid sites
+Number of constant sites: 91 (= 19.2389% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 91 (= 19.2389% of all sites)
+Number of parsimony informative sites: 371
+Number of distinct site patterns: 405
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: LG+G4
+
+State frequencies: (model)
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 1.0988
+
+ Category  Relative_rate  Proportion
+  1         0.1562         0.2500
+  2         0.5045         0.2500
+  3         1.0146         0.2500
+  4         2.3246         0.2500
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -7074.7304 (s.e. 163.3953)
+Unconstrained log-likelihood (without tree): -2767.0673
+Number of free parameters (#branches + #model parameters): 74
+Akaike information criterion (AIC) score: 14297.4608
+Corrected Akaike information criterion (AICc) score: 14325.3502
+Bayesian information criterion (BIC) score: 14605.2338
+
+Total tree length (sum of branch lengths): 4.9782
+Sum of internal branch lengths: 2.9665 (59.5895% of tree length)
+
+WARNING: 17 near-zero internal branches (<0.0021) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'gb|AKF16168|ARO' is drawn at root
+Numbers in parentheses are  standard bootstrap support (%)
+
++**gb|AKF16168|ARO
+|
+|                                                                                         +--gb|ASU10319.1|ARO
+|                                                                                      +--| (80)
+|                                                                                      |  +**gb|AST36143.1|ARO
+|                                                                                   +--| (100)
+|                                                                                   |  +--gb|AST36140.1|ARO
+|                                                                                +--| (50)
+|                                                                                |  |  +**gb|AVZ47168.1|ARO
+|                                                                                |  +--| (90)
+|                                                                                |     +**gb|AST36141.1|ARO
+|                                                                             +--| (30)
+|                                                                             |  +**gb|AST36144.1|ARO
+|                                                                          +--| (60)
+|                                                                          |  +**gb|ATQ63376.1|ARO
+|                                                                       +--| (50)
+|                                                                       |  |     +**gb|SBZ31568.1|ARO
+|                                                                       |  |  +**| (60)
+|                                                                       |  |  |  +**gb|AUN87920.1|ARO
+|                                                                       |  +**| (60)
+|                                                                       |     |  +**gb|ASF81896.1|ARO
+|                                                                       |     +**| (30)
+|                                                                       |        +**gb|OYN70668.1|ARO
+|                                                                   +---| (90)
+|                                                                   |   +**gb|ASU04896.1|ARO
+|                                                                +--| (60)
+|                                                                |  +-----gb|AUR80098.1|ARO
+|                                                        +-------| (100)
+|                                                        |       +-----gb|WP_001572373.1|ARO
+|                                                  +-----| (100)
+|                                                  |     |                      +**gb|AVK94777.1|ARO
+|                                                  |     |                   +**| (30)
+|                                                  |     |                   |  +**gb|AVK94778.1|ARO
+|                                                  |     |                +**| (40)
+|                                                  |     |                |  |  +--gb|AUI38915.1|ARO
+|                                                  |     |                |  +**| (50)
+|                                                  |     |                |     +**gb|ASR73329.1|ARO
+|                                                  |     +----------------| (100)
+|                                                  |                      +**gb|AVK94779.1|ARO
+|                                          +-------| (100)
+|                                          |       +---------------gb|AVX52225.1|ARO
+|                 +------------------------| (100)
+|                 |                        |                     +**gb|AVM85875.1|ARO
+|                 |                        +---------------------| (100)
+|                 |                                              +**gb|ASK40551.1|ARO
+|              +--| (100)
+|              |  |     +--gb|SBV31106.1|ARO
+|              |  |  +--| (50)
+|              |  |  |  +--gb|ASK49941.1|ARO
+|              |  +--| (30)
+|              |     +--gb|ASK49942.1|ARO
+|           +**| (60)
+|           |  +**gb|AVM85874.1|ARO
+|        +**| (60)
+|        |  +--gb|ASK49940.1|ARO
+|     +**| (0)
+|     |  +**gb|APM87143.1|ARO
+|  +**| (0)
+|  |  |  +**gb|AQQ11622.1|ARO
+|  |  +**| (10)
+|  |     +**gb|AVA31022.1|ARO
++**| (0)
+|  +**gb|ANJ15621.1|ARO
+|
+|        +**gb|APM84488.1|ARO
+|     +**| (10)
+|     |  +**gb|AQK48217.1|ARO
+|  +**| (0)
+|  |  +**gb|ANR95875.1|ARO
++**| (0)
+   |     +**gb|ATM29809.1|ARO
+   |  +**| (10)
+   |  |  +**gb|AQY61516.1|ARO
+   +**| (0)
+      +**gb|BBB21811.1|ARO
+
+Tree in newick format:
+
+(gb|AKF16168|ARO:0.0000010000,((((((((((((((((((gb|ASU10319.1|ARO:0.0041065927,gb|AST36143.1|ARO:0.0000010000)80:0.0027341341,gb|AST36140.1|ARO:0.0054621280)100:0.0191331395,(gb|AVZ47168.1|ARO:0.0000010000,gb|AST36141.1|ARO:0.0020436784)90:0.0074029385)50:0.0070660972,gb|AST36144.1|ARO:0.0020694750)30:0.0041077844,gb|ATQ63376.1|ARO:0.0000010000)60:0.0104387309,((gb|SBZ31568.1|ARO:0.0000027662,gb|AUN87920.1|ARO:0.0020390905)60:0.0020630418,(gb|ASF81896.1|ARO:0.0000010000,gb|OYN70668.1|ARO:0.0000010000)30:0.0000024548)60:0.0000020089)50:0.0041010856,gb|ASU04896.1|ARO:0.0000020010)90:0.1771368541,gb|AUR80098.1|ARO:0.2375153758)60:0.0928925421,gb|WP_001572373.1|ARO:0.2474939299)100:0.3130108522,(((gb|AVK94777.1|ARO:0.0000010000,gb|AVK94778.1|ARO:0.0020554459)30:0.0000010000,(gb|AUI38915.1|ARO:0.0041898596,gb|ASR73329.1|ARO:0.0000029950)50:0.0020546998)40:0.0020525136,gb|AVK94779.1|ARO:0.0000029281)100:0.6408843308)100:0.2307492681,gb|AVX52225.1|ARO:0.6087024014)100:0.3092289009,(gb|AVM85875.1|ARO:0.0000010000,gb|ASK40551.1|ARO:0.0000010000)100:0.8169543563)100:0.9529437323,((gb|SBV31106.1|ARO:0.0086169348,gb|ASK49941.1|ARO:0.0039005148)50:0.0545910755,gb|ASK49942.1|ARO:0.0407553784)30:0.0669789513)100:0.0743433318,gb|AVM85874.1|ARO:0.0000028042)60:0.0000029990,gb|ASK49940.1|ARO:0.0061323450)60:0.0020406338,gb|APM87143.1|ARO:0.0020354471)0:0.0000010000,(gb|AQQ11622.1|ARO:0.0020404986,gb|AVA31022.1|ARO:0.0020376908)10:0.0000010000)0:0.0000010000,gb|ANJ15621.1|ARO:0.0000010000)0:0.0000010000,(((gb|APM84488.1|ARO:0.0020378929,gb|AQK48217.1|ARO:0.0020374051)10:0.0000010000,gb|ANR95875.1|ARO:0.0000010000)0:0.0000010000,((gb|ATM29809.1|ARO:0.0000010000,gb|AQY61516.1|ARO:0.0000010000)10:0.0000010000,gb|BBB21811.1|ARO:0.0000010000)0:0.0000010000)0:0.0000010000);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 10 bootstrap trees
+Log-likelihood of consensus tree: -7089.772134
+Robinson-Foulds distance between ML tree and consensus tree: 26
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--gb|AKF16168|ARO
+|
+|                                                                                         +--gb|ASU10319.1|ARO
+|                                                                                      +--| (80)
+|                                                                                      |  +--gb|AST36143.1|ARO
+|                                                                                   +--| (100)
+|                                                                                   |  +--gb|AST36140.1|ARO
+|                                                                                +--| (50)
+|                                                                                |  |  +--gb|AVZ47168.1|ARO
+|                                                                                |  +--| (90)
+|                                                                                |     +--gb|AST36141.1|ARO
+|                                                                             +--| (60)
+|                                                                             |  |  +--gb|ATQ63376.1|ARO
+|                                                                             |  +--| (30)
+|                                                                             |     +--gb|AST36144.1|ARO
+|                                                                          +--| (50)
+|                                                                          |  |     +--gb|SBZ31568.1|ARO
+|                                                                          |  |  +--| (60)
+|                                                                          |  |  |  +--gb|AUN87920.1|ARO
+|                                                                          |  +--| (60)
+|                                                                          |     |  +--gb|ASF81896.1|ARO
+|                                                                          |     +--| (30)
+|                                                                          |        +--gb|OYN70668.1|ARO
+|                                                                      +---| (90)
+|                                                                      |   +--gb|ASU04896.1|ARO
+|                                                                   +--| (60)
+|                                                                   |  +----gb|AUR80098.1|ARO
+|                                                            +------| (100)
+|                                                            |      +-----gb|WP_001572373.1|ARO
+|                                                       +----| (100)
+|                                                       |    |                        +--gb|AVK94777.1|ARO
+|                                                       |    |                     +--| (40)
+|                                                       |    |                     |  +--gb|ASR73329.1|ARO
+|                                                       |    |                  +--| (20)
+|                                                       |    |                  |  +--gb|AVK94778.1|ARO
+|                                                       |    |               +--| (50)
+|                                                       |    |               |  +--gb|AVK94779.1|ARO
+|                                                       |    +---------------| (100)
+|                                                       |                    +--gb|AUI38915.1|ARO
+|                                               +-------| (100)
+|                                               |       +--------------gb|AVX52225.1|ARO
+|                       +-----------------------| (100)
+|                       |                       |                   +--gb|AVM85875.1|ARO
+|                       |                       +-------------------| (100)
+|                       |                                           +--gb|ASK40551.1|ARO
+|                    +--| (50)
+|                    |  |  +--gb|SBV31106.1|ARO
+|                    |  +--| (50)
+|                    |     +--gb|ASK49941.1|ARO
+|                 +--| (100)
+|                 |  +--gb|ASK49942.1|ARO
+|              +--| (60)
+|              |  +--gb|AVM85874.1|ARO
+|           +--| (60)
+|           |  +--gb|ASK49940.1|ARO
+|        +--| (10)
+|        |  +--gb|AVA31022.1|ARO
+|     +--| (20)
+|     |  +--gb|AQK48217.1|ARO
+|  +--| (10)
+|  |  +--gb|ATM29809.1|ARO
++--| (10)
+|  +--gb|APM84488.1|ARO
+|  |
+|  |  +--gb|AQQ11622.1|ARO
+|  +--| (20)
+|  |  +--gb|AQY61516.1|ARO
+|  |
+|  |  +--gb|BBB21811.1|ARO
+|  +--| (10)
+|     |  +--gb|ANR95875.1|ARO
+|     +--| (20)
+|        +--gb|ANJ15621.1|ARO
+|
++--gb|APM87143.1|ARO
+
+
+Consensus tree in newick format: 
+
+(gb|AKF16168|ARO:0.0000025259,(((((((((((((((((((gb|ASU10319.1|ARO:0.0041053534,gb|AST36143.1|ARO:0.0000025259)80:0.0000025259,gb|AST36140.1|ARO:0.0081985878)100:0.0190546887,(gb|AVZ47168.1|ARO:0.0000025259,gb|AST36141.1|ARO:0.0020428518)90:0.0102228762)50:0.0083325123,(gb|ATQ63376.1|ARO:0.0000027142,gb|AST36144.1|ARO:0.0061747809)30:0.0000025259)60:0.0104324879,((gb|SBZ31568.1|ARO:0.0000025259,gb|AUN87920.1|ARO:0.0020381616)60:0.0020620552,(gb|ASF81896.1|ARO:0.0000025259,gb|OYN70668.1|ARO:0.0000025259)30:0.0000025259)60:0.0000025259)50:0.0040990594,gb|ASU04896.1|ARO:0.0000024901)90:0.1760305396,gb|AUR80098.1|ARO:0.2384780901)60:0.0907405938,gb|WP_001572373.1|ARO:0.2516614224)100:0.3046532169,((((gb|AVK94777.1|ARO:0.0000025259,gb|ASR73329.1|ARO:0.0020553416)40:0.0000025259,gb|AVK94778.1|ARO:0.0020558582)20:0.0000025259,gb|AVK94779.1|ARO:0.0020553124)50:0.0017560235,gb|AUI38915.1|ARO:0.0045262240)100:0.6443487660)100:0.2355246113,gb|AVX52225.1|ARO:0.6209603927)100:0.3283560922,(gb|AVM85875.1|ARO:0.0000025259,gb|ASK40551.1|ARO:0.0000025259)100:0.8007230221)100:0.9935725449,(gb|SBV31106.1|ARO:0.0086770230,gb|ASK49941.1|ARO:0.0038528036)50:0.0197142355)50:0.0353923422,gb|ASK49942.1|ARO:0.0404806565)100:0.1416903340,gb|AVM85874.1|ARO:0.0000025259)60:0.0000025259,gb|ASK49940.1|ARO:0.0061311528)60:0.0020402997,gb|AVA31022.1|ARO:0.0020372679)10:0.0000025259,gb|AQK48217.1|ARO:0.0020369866)20:0.0000025259,gb|ATM29809.1|ARO:0.0000025259)10:0.0000025259,gb|APM84488.1|ARO:0.0020374647,(gb|AQQ11622.1|ARO:0.0020400699,gb|AQY61516.1|ARO:0.0000025259)20:0.0000025259,(gb|BBB21811.1|ARO:0.0000025259,(gb|ANR95875.1|ARO:0.0000025259,gb|ANJ15621.1|ARO:0.0000025259)20:0.0000025259)10:0.0000025259)10:0.0000025259,gb|APM87143.1|ARO:0.0020350358);
+
+TIME STAMP
+----------
+
+Date and time: Wed May 27 19:19:24 2020
+Total CPU time used: 359.701334 seconds (0h:5m:59s)
+Total wall-clock time used: 362.551091 seconds (0h:6m:2s)
+
